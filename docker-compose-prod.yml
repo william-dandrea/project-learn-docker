@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  my-dca-calculator-react-app:
+    # stdin_open: true
+    # tty: true
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+      args:
+        - REACT_APP_NAME=MyDCACalculatorProd # This args will be passed to the Dockerfile.prod file
+    ports:
+      - "8080:80"

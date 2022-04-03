@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  my-dca-calculator-react-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
